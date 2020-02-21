@@ -8,9 +8,14 @@
 }
 
 .header {
+  font-size: 1.4rem;
   height: 7rem;
   background: $white;
   border-bottom: $Grey-light2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .content {
