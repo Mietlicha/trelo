@@ -11,7 +11,7 @@
   font-size: 1.4rem;
   height: 7rem;
   background: $white;
-  border-bottom: $Grey-light2;
+  border-bottom: $line;
 
   display: flex;
   justify-content: space-between;
@@ -33,6 +33,25 @@
 .hotel-view {
   background: $white;
   flex: 1;
+}
 
-  height: 80rem;
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background: $Grey-light1;
+  border-bottom: $line;
+}
+
+.description {
+  font-size: 1.4rem;
+  background: $white;
+  box-shadow: $box-shadow-subtle;
+  padding: 3rem;
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+}
+
+.user-reviews {
+  background: red;
+  flex: 1;
 }
