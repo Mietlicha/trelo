@@ -40,10 +40,10 @@
   padding: 4.5rem;
   background: $Grey-light1;
   border-bottom: $line;
+  font-size: 1.4rem;
 }
 
 .description {
-  font-size: 1.4rem;
   background: $white;
   box-shadow: $box-shadow-subtle;
   padding: 3rem;
@@ -52,6 +52,9 @@
 }
 
 .user-reviews {
-  background: red;
   flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
