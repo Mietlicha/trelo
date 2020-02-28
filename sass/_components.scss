@@ -378,12 +378,15 @@
     margin-right: 0.7rem;
 
     //older browser
-    // background: url(../img/chevron-thin-right.svg) center/cover;
+    background: url(../img/chevron-thin-right.svg) center/cover;
 
     //newer browser
-    background-color: $Primary;
-    -webkit-mask: url(../img/chevron-thin-right.svg) center/cover;
-    mask: url(../img/chevron-thin-right.svg) center/cover;
+    @supports (-webkit-mask: url()) or (mask: url()) {
+      background-color: $Primary;
+      -webkit-mask: url(../img/chevron-thin-right.svg) center/cover;
+      mask: url(../img/chevron-thin-right.svg) center/cover;
+      background-image: none;
+    }
   }
 }
 
